@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   <style>
+  <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap');
@@ -19,8 +19,93 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
+    /* body{
+      height: 100vh;
+    } */
     .container{
-       height: 100vh;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("pattern-curve.svg");
+      background-position: center bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+      /* margin-top: 50px; */
+    }
+    .container-img{
+    
+      background-image: url("pattern-bg.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* width: 100%; */
+      margin: 0 auto;
+      height: 100%;
+      padding: 40px;
+
+       
+       /* position: relative; */
+       /* width: 100%;
+       height: 440px; */
+    
+    }
+    .container-text{
+    
+      text-align: center;
+      padding: 30px;
+      font-size: 24px;
+      font-weight: 300;
+      background-image: url("pattern-quotes.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 60px;
+    }
+    .name{
+      margin-top: 35px;
+    }
+    .name h4{
+      font-size:18px;
+    }
+    .name h5{
+      font-size:18px;
+      color: hsl(240, 2%, 42%);
+      font-weight: 500;
+    }
+    img{
+     width: 300px;
+     height: 100%;
+     border-radius: 10px;
+    }
+   @media (min-width:1031px){
+
+/* .container-img {
+
+     width: 0;
+    height: 0;
+  
+   } */
+   img {
+
+    height: auto;
+}
+.container {
+  
+    flex-direction: row;
+
+
+}
+.container-img {
+    height: auto;
+    order: 1;
+  
+}
+  }
+  @media (max-width:400px){
+  .container{
+      height: 100vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -75,24 +160,29 @@
     img{
      width: 300px;
      height: 100%;
+     border-radius: 10px;
     }
-   
+
+  }
   </style>
 </head>
 <body>
 
   <div class="container">
     <div class="container-img">
-      <img src="image-tanya.jpg" alt="profile">
+      <img src="images/image-tanya.jpg" alt="profile">
           </div>
     <div class="container-text">
-      <p>“ I’ve been interested in coding for a while but never taken the jump, until now. 
-        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-        excited about the future. ”</p>
-        <div class="name">
-          <h4>Tanya Sinclair</h4>
-          <h5>UX Engineer</h5>
-        </div>
+      <div class="bg-img">
+        <p>“ I’ve been interested in coding for a while but never taken the jump, until now. 
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+          excited about the future. ”</p>
+          <div class="name">
+            <h4>Tanya Sinclair</h4>
+            <h5>UX Engineer</h5>
+          </div>
+      </div>
+      
         
 
     </div>
